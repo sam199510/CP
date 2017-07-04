@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生查看课程消息</title>
+    <link type="text/css" rel="stylesheet" href="CSS/selectClassForStudent/classForStudent.css">
+    <style type="text/css">
+        @media screen and (max-width: 555px){
+            .top_view_image{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top_view">
+        <div class="top_view_image">
+            <img src="image/selectClassForStudent/course.png">
+        </div>
+        <div class="semester_and_info">
+            <div class="academic_year_and_semester">
+                <select name="academic_year" class="academic_year_class">
+                    <option value="2017-2018">2017-2018</option>
+                    <option value="2016-2017">2016-2017</option>
+                    <option value="2015-2016">2015-2016</option>
+                    <option value="2014-2015">2014-2015</option>
+                </select>
+                <span>
+                    学年第
+                </span>
+                <select name="semester" class="semester_class">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <span>
+                    学期
+                </span>
+            </div>
+            <div class="info">
+                某某某同学，您好，以下是您的所修课程
+            </div>
+        </div>
+    </div>
+    <div class="course_list_view">
+        <ul class="course_list">
+            <li>
+                <div class="course_list_column_name">
+                    所修课程列表
+                </div>
+                <div class="operation">
+                    操作
+                </div>
+            </li>
+            <li>
+                <div class="course">
+                    <div class="course_name">
+                        基于过程管理的软件开发综合课程设计
+                    </div>
+                    <div class="course_time">
+                        2017/6/26-2017/7/7
+                    </div>
+                    <div class="course_position">
+                        软件工程实验室
+                    </div>
+                </div>
+                <input type="button" class="operation_button" value="查看历史通知">
+            </li>
+            <li>
+                <div class="course">
+                    <div class="course_name">
+                        毛泽东思想和中国特色社会主义理论体系概论
+                    </div>
+                    <div class="course_time">
+                        周一第6,7节{第1-16周}
+                    </div>
+                    <div class="course_position">
+                        *A2-218
+                    </div>
+                </div>
+                <input type="button" class="operation_button" value="查看历史通知">
+            </li>
+            <li>
+                <div class="course">
+                    <div class="course_name">
+                        离散数学
+                    </div>
+                    <div class="course_time">
+                        周三第10,11,12节{第1-16周}
+                    </div>
+                    <div class="course_position">
+                        *A2-105
+                    </div>
+                </div>
+                <input type="button" class="operation_button" value="查看历史通知">
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
