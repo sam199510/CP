@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>学生查看课程消息</title>
-    <link type="text/css" rel="stylesheet" href="CSS/selectClassForStudent/classForStudent.css">
+    <title>教师查看课程消息</title>
+    <link type="text/css" rel="stylesheet" href="CSS/teachingClassForTeacher/classForTeacher.css">
 </head>
 <body>
     <div class="top_view">
         <div class="top_view_image">
-            <img src="image/selectClassForStudent/course.png">
+            <img src="image/teachingClassForTeacher/course-2.png">
         </div>
-        <div class="semester_and_info">
+        <div class="semester_and_info_class">
             <div class="academic_year_and_semester">
-                <select name="academic_year" class="academic_year_class">
+                <select name="academicYear" class="academic_year">
                     <option value="2017-2018">2017-2018</option>
                     <option value="2016-2017">2016-2017</option>
                     <option value="2015-2016">2015-2016</option>
@@ -31,7 +31,7 @@
                 </span>
             </div>
             <div class="info">
-                某某某同学，您好，以下是您的所修课程
+                某某某老师，您好，以下是您该学期的授课列表
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@
         <ul class="course_list">
             <li>
                 <div class="course_list_column_name">
-                    所修课程列表
+                    授课列表
                 </div>
                 <div class="operation">
                     操作
@@ -57,7 +57,8 @@
                         软件工程实验室
                     </div>
                 </div>
-                <input type="button" class="operation_button" value="查看历史通知">
+                <input type="button" class="view_history_button" value="查看历史通知">
+                <input type="button" class="publish_message_button" value="发布消息">
             </li>
             <li>
                 <div class="course">
@@ -71,7 +72,8 @@
                         *A2-218
                     </div>
                 </div>
-                <input type="button" class="operation_button" value="查看历史通知">
+                <input type="button" class="view_history_button" value="查看历史通知">
+                <input type="button" class="publish_message_button" value="发布消息">
             </li>
             <li>
                 <div class="course">
@@ -85,7 +87,8 @@
                         *A2-105
                     </div>
                 </div>
-                <input type="button" class="operation_button" value="查看历史通知">
+                <input type="button" class="view_history_button" value="查看历史通知">
+                <input type="button" class="publish_message_button" value="发布消息">
             </li>
         </ul>
     </div>
