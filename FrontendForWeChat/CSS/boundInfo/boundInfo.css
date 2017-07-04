@@ -30,7 +30,7 @@ body{
 
 .info_input{
     margin-top: 50px;
-    width: 80%;
+    width: 78%;
     margin-left: 10%;
     margin-right: 10%;
     height: 80px;
@@ -38,7 +38,7 @@ body{
     font-size: 40px;
     font-family: 微软雅黑;
     border-radius: 20px;
-    padding-left: 20px;
+    padding-left: 2%;
 }
 
 .info_button{
@@ -55,6 +55,14 @@ body{
     text-align: center;
     color: white;
     -webkit-appearance: none;
+}
+
+.info_button:hover{
+    cursor: pointer;
+}
+
+.info_button:active{
+    background-color: darkgray;
 }
 
 .info_agree{

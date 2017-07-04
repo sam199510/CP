@@ -34,7 +34,7 @@
           <file leaf-file-name="boundInfo.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/CSS/boundInfo/boundInfo.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
+                <state relative-caret-position="265">
                   <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
                   <folding />
                 </state>
@@ -65,8 +65,8 @@
         <option value="$PROJECT_DIR$/CSS/checkClassSchedule/classSchedule.css" />
         <option value="$PROJECT_DIR$/selectClassForStudent.html" />
         <option value="$PROJECT_DIR$/CSS/selectClassForStudent/classForStudent.css" />
-        <option value="$PROJECT_DIR$/CSS/boundInfo/boundInfo.css" />
         <option value="$PROJECT_DIR$/boundInfo.html" />
+        <option value="$PROJECT_DIR$/CSS/boundInfo/boundInfo.css" />
       </list>
     </option>
   </component>
@@ -240,12 +240,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499080922378</updated>
       <workItem from="1499080924155" duration="7857000" />
-      <workItem from="1499128385628" duration="14019000" />
+      <workItem from="1499128385628" duration="14582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21876000" />
+    <option name="totallyTimeSpent" value="22439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="22" width="1411" height="878" extended-state="0" />
@@ -338,18 +338,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/boundInfo/boundInfo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/boundInfo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CSS/boundInfo/boundInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
           <folding />
         </state>
       </provider>
