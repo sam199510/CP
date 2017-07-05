@@ -9,9 +9,11 @@
             var oHasNotRead = document.getElementById("hasNotRead");
             var oHasRead = document.getElementById("hasRead");
 
+            //为未读的通知设置黑色粗体文字
             oHasNotRead.style.color = "black";
             oHasNotRead.style.fontWeight = "bolder";
 
+            //为已读的通知设置灰色正常体文字
             oHasRead.style.color = "darkgray";
             oHasRead.style.fontWeight = "normal";
         };
@@ -35,6 +37,7 @@
         <ul>
             <li>
                 <div class="brief_message">
+                    <!--id为hasNotRead的是未读通知-->
                     <div id="hasNotRead" class="brief_message_content">
                         各位同学，今天*********
                     </div>
@@ -46,6 +49,7 @@
             </li>
             <li>
                 <div class="brief_message">
+                    <!--id为hasRead的是已读通知-->
                     <div id="hasRead" class="brief_message_content">
                         各位同学，今天*********
                     </div>

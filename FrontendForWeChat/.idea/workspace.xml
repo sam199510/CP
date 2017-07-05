@@ -20,8 +20,8 @@
           <file leaf-file-name="showHistoryMessage.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/showHistoryMessage.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="570">
-                  <caret line="38" column="40" lean-forward="true" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+                <state relative-caret-position="225">
+                  <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -34,8 +34,8 @@
           <file leaf-file-name="historyMessage.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/CSS/showHistoryMessage/historyMessage.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="145">
-                  <caret line="83" column="19" lean-forward="true" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+                <state relative-caret-position="355">
+                  <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -403,12 +403,12 @@
       <updated>1499080922378</updated>
       <workItem from="1499080924155" duration="7857000" />
       <workItem from="1499128385628" duration="19453000" />
-      <workItem from="1499218296748" duration="3831000" />
+      <workItem from="1499218296748" duration="4051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31141000" />
+    <option name="totallyTimeSpent" value="31361000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="22" width="1401" height="878" extended-state="6" />
@@ -514,18 +514,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/showHistoryMessage.html">
+    <entry file="file://$PROJECT_DIR$/CSS/showHistoryMessage/historyMessage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="40" lean-forward="true" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+        <state relative-caret-position="355">
+          <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CSS/showHistoryMessage/historyMessage.css">
+    <entry file="file://$PROJECT_DIR$/showHistoryMessage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="83" column="19" lean-forward="true" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+        <state relative-caret-position="225">
+          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding />
         </state>
       </provider>
