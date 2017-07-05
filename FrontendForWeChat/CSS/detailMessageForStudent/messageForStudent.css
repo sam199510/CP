@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.top_view{
+    width: 100%;
+    height: 140px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.top_view_image{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.top_view_image img{
+    width: 100%;
+    height: 100%;
+}
+
+.info{
+    margin-top: 20px;
+    line-height: 50px;
+    height: 100px;
+    margin-left: 20px;
+    font-family: 微软雅黑;
+    font-size: 30px;
+    float: left;
+}
+
+.message_class{
+    margin: 0px;
+    padding: 0px;
+}
+
+.message_title{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-family: 微软雅黑;
+    font-size: 35px;
+}
+
+.message_content{
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 350px;
+    font-family: 微软雅黑;
+    font-size: 30px;
+}
+
+.message_teacher{
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    font-family: 微软雅黑;
+    position: absolute;
+    right: 10%;
+    margin-top: 50px;
+    text-align: right;
+}
+
+.message_time{
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    font-family: 微软雅黑;
+    position: absolute;
+    right: 10%;
+    margin-top: 150px;
+    text-align: right;
+}
