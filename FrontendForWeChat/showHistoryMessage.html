@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看历史通知</title>
+    <link type="text/css" rel="stylesheet" href="CSS/showHistoryMessage/historyMessage.css">
+    <script type="text/javascript">
+        window.onload = function () {
+            var oHasNotRead = document.getElementById("hasNotRead");
+            var oHasRead = document.getElementById("hasRead");
+
+            oHasNotRead.style.color = "black";
+            oHasNotRead.style.fontWeight = "bolder";
+
+            oHasRead.style.color = "darkgray";
+            oHasRead.style.fontWeight = "normal";
+        };
+    </script>
+</head>
+<body>
+    <div class="top_view">
+        <div class="top_view_image">
+            <img src="image/showHistoryMessage/message.png">
+        </div>
+        <div class="course_and_info">
+            <div class="course">
+                某某某课程
+            </div>
+            <div class="info">
+                某某某老师/同学您好，以下是您该门课程（发布）的历史通知消息
+            </div>
+        </div>
+    </div>
+    <div class="history_message_list">
+        <ul>
+            <li>
+                <div class="brief_message">
+                    <div id="hasNotRead" class="brief_message_content">
+                        各位同学，今天*********
+                    </div>
+                    <div class="brief_mesage_time">
+                        2017/6/5
+                    </div>
+                </div>
+                <input type="button" class="detail_message_btn" value="通知详情">
+            </li>
+            <li>
+                <div class="brief_message">
+                    <div id="hasRead" class="brief_message_content">
+                        各位同学，今天*********
+                    </div>
+                    <div class="brief_mesage_time">
+                        2017/6/5
+                    </div>
+                </div>
+                <input type="button" class="detail_message_btn" value="通知详情">
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
