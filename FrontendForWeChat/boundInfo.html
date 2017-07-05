@@ -4,6 +4,46 @@
     <meta charset="UTF-8">
     <title>绑定信息</title>
     <link type="text/css" rel="stylesheet" href="CSS/boundInfo/boundInfo.css">
+    <script type="text/javascript" src="JS/jQuery/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="JS/jQuery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var o_info_stuNum = $("#info_stuNum");
+            var o_info_school = $("#info_school");
+            var o_info_password = $("#info_password");
+
+            var o_info_button = $(".info_button");
+
+            var o_bound_info_class = $(".bound_info_class");
+            var o_bound_info_content = $(".bound_info_content");
+            var o_bound_info_btn = $(".bound_info_btn");
+
+            o_info_button.click(function () {
+
+                if (o_info_stuNum.val()!="" && o_info_school.val()!="" && o_info_password.val()!="") {
+                    o_bound_info_content.empty();
+                    o_bound_info_content.text("恭喜，绑定成功！");
+
+                    o_bound_info_btn.empty();
+                    o_bound_info_btn.val("OK");
+
+                } else {
+                    o_bound_info_content.empty();
+                    o_bound_info_content.text("不好意思，绑定失败！");
+
+                    o_bound_info_btn.empty();
+                    o_bound_info_btn.val("我再去看看");
+                }
+
+                o_bound_info_class.animate({top: 360}, 300);
+            });
+
+            o_bound_info_btn.click(function () {
+                o_bound_info_class.animate({top: -550}, 300);
+            });
+
+        });
+    </script>
 </head>
 <body>
     <div class="top_view">
@@ -13,11 +53,20 @@
         欢迎使用云鸽子系统，请您绑定！
     </div>
     <form>
-        <input class="info_input" type="tel" placeholder="请输入您的学号/工号">
-        <input class="info_input" type="text" placeholder="请输入您所在的学校">
-        <input class="info_input" type="password" placeholder="请输入密码">
+        <input id="info_stuNum" class="info_input" type="tel" placeholder="请输入您的学号/工号">
+        <input id="info_school" class="info_input" type="text" placeholder="请输入您所在的学校">
+        <input id="info_password" class="info_input" type="password" placeholder="请输入密码">
         <input class="info_button" type="button" value="绑定">
         <div class="info_agree">绑定即代表同意本系统相关协议</div>
     </form>
+    <div class="bound_info_class">
+        <div class="bound_info_title">
+            提示
+        </div>
+        <div class="bound_info_content">
+
+        </div>
+        <input type="button" class="bound_info_btn">
+    </div>
 </body>
 </html>

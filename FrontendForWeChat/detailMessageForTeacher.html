@@ -9,14 +9,15 @@
     <script type="text/javascript">
         $(document).ready(function () {
             var widthOfScreen = $(window).width();
+            var heightOfScreen = $(document).height();
 
             $(".delete_message_btn").click(function () {
-                $(".hidden_opacity_class").show(300);
-                $(".delete_message_tip").animate({width:0.6*widthOfScreen, marginLeft:0.2*widthOfScreen, height: 350, top: 280},300);
+                $(".hidden_opacity_class").animate({width:widthOfScreen, height:heightOfScreen},300);
+                $(".delete_message_tip").animate({width:0.6*widthOfScreen, marginLeft:0.2*widthOfScreen, height: 350, top: 200},300);
             });
 
             $(".cancel_btn").click(function () {
-                $(".hidden_opacity_class").hide(300);
+                $(".hidden_opacity_class").animate({width:0, height:0},300);
                 $(".delete_message_tip").animate({width:0*widthOfScreen, marginLeft:0*widthOfScreen, height: 0, top: 0},300);
             });
         });
@@ -54,7 +55,6 @@
         <div class="tip_content">
             确定要删除这个通知吗？
         </div>
-        <!--<input class="show_width">-->
         <div class="two_btn">
             <input class="cancel_btn" type="button" value="取消">
             <input class="confirm_btn" type="button" value="确定">

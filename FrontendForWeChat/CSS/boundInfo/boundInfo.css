@@ -75,4 +75,60 @@ body{
     font-family: 微软雅黑;
 }
 
+.bound_info_class{
+    width: 80%;
+    margin-left: 10%;
+    height: 500px;
+    z-index: 200;
+    position: absolute;
+    top: -550px;
+    border-radius: 10px;
+    background-color: white;
 
+    border: 1px solid lightgrey;
+    padding: 0%;
+}
+
+.bound_info_title{
+    width: 100%;
+    margin-top: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-family: 微软雅黑;
+    font-size: 45px;
+    text-align: center;
+}
+
+.bound_info_content{
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100px;
+    font-family: 微软雅黑;
+    font-size: 40px;
+    text-align: center;
+}
+
+.bound_info_btn{
+    width: 80%;
+    position: absolute;
+    bottom: 50px;
+    margin-left: 10%;
+    height: 80px;
+    background-color: #1ea114;
+    border-radius: 10px;
+    border-width: 0px;
+    -webkit-appearance: none;
+    color: white;
+    font-family: 微软雅黑;
+    font-size: 40px;
+}
+
+.bound_info_btn:hover{
+    cursor: pointer;
+}
+
+.bound_info_btn:active{
+    background-color: darkgrey;
+}
