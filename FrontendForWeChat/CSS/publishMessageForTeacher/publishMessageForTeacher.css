@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.top_view_class{
+    width: 100%;
+    height: 160px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.top_view_image{
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+    margin-top: 30px;
+    float: left;
+}
+
+.top_view_image img{
+    width: 100%;
+    height: 100%;
+}
+
+.course{
+    margin: 30px 0px 30px 30px;
+    height: 100px;
+    float: left;
+    font-family: 微软雅黑;
+    font-size: 40px;
+}
+
+.publish_message_class{
+    width: 100%;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+.publish_message_content{
+    width: 88%;
+    height: 500px;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+    resize: none;
+    font-family: 微软雅黑;
+    font-size: 40px;
+    padding: 2%;
+}
+
+.publish_message_btn{
+    width: 92%;
+    height: 75px;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-width: 0px;
+    border-radius: 10px;
+    -webkit-appearance: none;
+    font-family: 微软雅黑;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    background-color: #1ea114;
+}
+
+.publish_message_btn:hover{
+    cursor: pointer;
+}
+
+.publish_message_btn:active{
+    background-color: darkgrey;
+}
+

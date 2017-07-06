@@ -75,6 +75,26 @@ body{
     font-family: 微软雅黑;
 }
 
+.line_a{
+    width: 3px;
+    background-color: lightgrey;
+    height: 350px;
+    position: absolute;
+    left: 15%;
+    z-index: 200;
+    top: -900px;
+}
+
+.line_b{
+    width: 3px;
+    background-color: lightgrey;
+    height: 360px;
+    position: absolute;
+    z-index: 200;
+    left: 85%;
+    top: -900px;
+}
+
 .bound_info_class{
     width: 80%;
     margin-left: 10%;
@@ -82,10 +102,10 @@ body{
     z-index: 200;
     position: absolute;
     top: -550px;
+    /*top: 350px;*/
     border-radius: 10px;
     background-color: white;
-
-    border: 1px solid lightgrey;
+    border: 3px solid lightgrey;
     padding: 0%;
 }
 

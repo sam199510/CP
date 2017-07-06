@@ -18,6 +18,9 @@
             var o_bound_info_content = $(".bound_info_content");
             var o_bound_info_btn = $(".bound_info_btn");
 
+            var o_line_a = $(".line_a");
+            var o_line_b = $(".line_b");
+
             o_info_button.click(function () {
 
                 if (o_info_stuNum.val()!="" && o_info_school.val()!="" && o_info_password.val()!="") {
@@ -35,11 +38,15 @@
                     o_bound_info_btn.val("我再去看看");
                 }
 
-                o_bound_info_class.animate({top: 360}, 300);
+                o_bound_info_class.animate({top: 350}, 300);
+                o_line_a.animate({top: 0}, 300);
+                o_line_b.animate({top: 0}, 300);
             });
 
             o_bound_info_btn.click(function () {
                 o_bound_info_class.animate({top: -550}, 300);
+                o_line_b.animate({top: -900}, 300);
+                o_line_a.animate({top: -900}, 300);
             });
 
         });
@@ -59,6 +66,8 @@
         <input class="info_button" type="button" value="绑定">
         <div class="info_agree">绑定即代表同意本系统相关协议</div>
     </form>
+    <div class="line_a"></div>
+    <div class="line_b"></div>
     <div class="bound_info_class">
         <div class="bound_info_title">
             提示
