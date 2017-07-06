@@ -1,1 +1,80 @@
 @charset "UTF-8";
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.course_title_class{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    border-bottom: 2px solid lightgrey;
+}
+
+.course_img{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+}
+
+.course_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.course_title{
+    width: 100%;
+    height: 80px;
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: 微软雅黑;
+    color: #30c5d0;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bolder;
+}
+
+.teacher_info{
+    margin: 0% 10% 0% 10%;
+    width: 75%;
+    height: 80px;
+    line-height: 80px;
+    padding-left: 5%;
+    font-family: 微软雅黑;
+    font-size: 25px;
+    font-weight: lighter;
+    color: darkgrey;
+    border-bottom: 2px solid lightgrey;
+}
+
+.time_and_position{
+    width: 75%;
+    padding-left: 5%;
+    height: 170px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom: 2px solid lightgrey;
+}
+
+.time_class{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: darkgrey;
+    font-family: 微软雅黑;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.position_class{
+    margin-top: 20px;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    font-family: 微软雅黑;
+    font-size: 25px;
+}
