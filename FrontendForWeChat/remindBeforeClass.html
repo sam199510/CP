@@ -38,7 +38,6 @@
             showCurrentTime();
         });
     </script>
-
     <script type="text/javascript">
         //引用的是在线jquery地址，如果不行请自行下载切换
         (function($){
@@ -106,7 +105,6 @@
                     sPointer.css({'transform': 'rotate(' + (-90+oSeconds*6) + 'deg)'});
                 }, 1000);
 
-
                 //绘制钟表刻度
                 for(var i=0; i<60; i++){
                     var width = 1, height = 6, oBcolor = '#111';
@@ -144,7 +142,6 @@
                     });
                     return oPointer;
                 }
-
                 return this;
             }
         })(jQuery);

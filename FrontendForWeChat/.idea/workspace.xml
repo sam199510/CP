@@ -14,41 +14,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6822595">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="remindBeforeClass.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/remindBeforeClass.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="163" column="37" lean-forward="true" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="37" />
-                  <folding>
-                    <element signature="e#7085#7091#0" expanded="true" />
-                    <element signature="e#7091#7097#0" expanded="true" />
-                    <element signature="e#7097#7103#0" expanded="true" />
-                    <element signature="e#7103#7109#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="remindBeforeClass.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/CSS/remindBeforeClass/remindBeforeClass.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -295,18 +261,17 @@
       <workItem from="1499321592905" duration="43000" />
       <workItem from="1499321742500" duration="58000" />
       <workItem from="1499321892296" duration="6206000" />
-      <workItem from="1499393733594" duration="1332000" />
+      <workItem from="1499393733594" duration="1880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63047000" />
+    <option name="totallyTimeSpent" value="63595000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="22" width="1402" height="878" extended-state="0" />
-    <editor active="true" />
+    <frame x="39" y="22" width="1402" height="878" extended-state="1" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19186875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19186875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -340,10 +305,10 @@
         <state relative-caret-position="405">
           <caret line="27" column="58" lean-forward="true" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
           <folding>
-            <element signature="e#7085#7091#0" expanded="true" />
-            <element signature="e#7091#7097#0" expanded="true" />
-            <element signature="e#7097#7103#0" expanded="true" />
-            <element signature="e#7103#7109#0" expanded="true" />
+            <element signature="e#7082#7088#0" expanded="true" />
+            <element signature="e#7088#7094#0" expanded="true" />
+            <element signature="e#7094#7100#0" expanded="true" />
+            <element signature="e#7100#7106#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -516,24 +481,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/remindBeforeClass.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="146" column="19" lean-forward="true" selection-start-line="146" selection-start-column="19" selection-end-line="146" selection-end-column="19" />
+          <folding>
+            <element signature="e#7082#7088#0" expanded="true" />
+            <element signature="e#7088#7094#0" expanded="true" />
+            <element signature="e#7094#7100#0" expanded="true" />
+            <element signature="e#7100#7106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CSS/remindBeforeClass/remindBeforeClass.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remindBeforeClass.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="163" column="37" lean-forward="true" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="37" />
-          <folding>
-            <element signature="e#7085#7091#0" expanded="true" />
-            <element signature="e#7091#7097#0" expanded="true" />
-            <element signature="e#7097#7103#0" expanded="true" />
-            <element signature="e#7103#7109#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
