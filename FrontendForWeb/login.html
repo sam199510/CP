@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link type="text/css" rel="stylesheet" href="CSS/loginPage/loginPage.css">
+    <script type="text/javascript" src="JS/jQuery/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="JS/jQuery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //图片无缝轮播
+            var index = 0;
+
+            var oImageCarousel = $(".image_carousel_class");
+            var oUl = $("ul#image_carousel_ul");
+
+            var oUlHTML = oUl.html();
+            oUlHTML += oUlHTML;
+            $("#image_carousel_ul").html(oUlHTML);
+            oUl.css("width",oUl.innerWidth()*2);
+
+            function changePhoto() {
+                index = index%5;
+                if ((oUl.offset().left -  oImageCarousel.offset().left) < -oUl.innerWidth()/2 + 1000) {
+                    oUl.css("marginLeft", 0);
+                }
+                index--;
+                oUl.animate({marginLeft: 1000*index},500);
+            }
+            //设置定时器
+            setInterval(changePhoto, 5000);
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var o_input_account = $("#input_account");
+            var o_input_school = $("#input_school");
+            var o_input_password = $("#input_password");
+
+            var o_login_btn = $(".login_btn");
+
+            var o_check_account = $("#check_acccount");
+            var o_check_school = $("#check_school");
+            var o_check_password = $("#check_password");
+
+            var isAccount = false;
+            var isSchool = false;
+            var isPassword = false;
+
+            o_login_btn.click(function () {
+                if (o_input_account.val() == ""){
+                    o_check_account.empty();
+                    o_check_account.text("工号不能为空");
+                    isAccount = false;
+                } else if (o_input_account.val().length != 6) {
+                    o_check_account.empty();
+                    o_check_account.text("工号必须为6位");
+                    isAccount = false;
+                } else {
+                    o_check_account.empty();
+                    isAccount = true;
+                }
+
+                if (o_input_school.val() == ""){
+                    o_check_school.empty();
+                    o_check_school.text("学校不能为空");
+                    isSchool = false;
+                } else {
+                    o_check_school.empty();
+                    isSchool = true;
+                }
+
+                if (o_input_password.val() == ""){
+                    o_check_password.empty();
+                    o_check_password.text("请输入密码");
+                    isPassword = false;
+                } else {
+                    o_check_password.empty();
+                    isPassword = true;
+                }
+
+                if (isAccount == true && isSchool == true && isPassword == true) {
+                    console.log("登录成功");
+                } else {
+                    console.log("登录失败");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="top_bar_view">
+        欢迎您使用云鸽子系统
+    </div>
+    <div class="image_carousel_class">
+        <ul id="image_carousel_ul">
+            <li><img src="images/loginPage/imageCarousel/Foggy_Forest.jpg"></li>
+            <li><img src="images/loginPage/imageCarousel/Forest_in_Mist.jpg"></li>
+            <li><img src="images/loginPage/imageCarousel/Mountain_Range.jpg"></li>
+            <li><img src="images/loginPage/imageCarousel/Pink_Forest.jpg"></li>
+            <li><img src="images/loginPage/imageCarousel/Yosemite_3.jpg"></li>
+        </ul>
+    </div>
+    <div class="login_form_class">
+        <div class="form_image">
+            <img src="images/loginPage/pigeons.png">
+        </div>
+        <form>
+            <input id="input_account" class="input_class" type="tel" placeholder="请您输入您的工号">
+            <div class="input_image">
+                <img src="images/loginPage/imageInput/account.png">
+            </div>
+            <div id="check_acccount" class="check_input_class">
+                <!--工号输入有误-->
+            </div>
+            <input id="input_school" class="input_class" type="text" placeholder="请输入您所在的学校">
+            <div class="input_image">
+                <img src="images/loginPage/imageInput/school.png">
+            </div>
+            <div id="check_school" class="check_input_class">
+                <!--学校输入有误-->
+            </div>
+            <input id="input_password" class="input_class" type="password" placeholder="请输入您的密码">
+            <div class="input_image">
+                <img src="images/loginPage/imageInput/password.png">
+            </div>
+            <div id="check_password" class="check_input_class">
+                <!--密码不能为空-->
+            </div>
+            <input class="login_btn" type="button" value="登录">
+        </form>
+    </div>
+    <div class="bottom_bar_class">
+        ©&nbsp;云鸽子软件团队<br>
+        版权所有&nbsp;侵权必究
+    </div>
+</body>
+</html>
