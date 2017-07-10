@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 body{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .top_bar_view{
@@ -158,4 +160,87 @@ body{
     font-family: 微软雅黑;
     text-align: center;
     border-top: 1px solid lightgrey;
+}
+
+.feedback_class{
+    width: 100%;
+    height: 0%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+}
+
+.feedback_info_class{
+    width: 400px;
+    height: 250px;
+    top: -300px;
+    margin-left: -200px;
+    left: 50%;
+    background-color: white;
+    z-index: 2000;
+    position: absolute;
+}
+
+.feedback_title{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    left: 150px;
+    right: 150px;
+    margin-top: 20px;
+    font-family: 微软雅黑;
+    font-size: 25px;
+    position: absolute;
+    text-align: center;
+}
+
+.close_btn{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.close_btn img{
+    width: 100%;
+    height: 100%;
+}
+
+.feedback_content{
+    width: 350px;
+    height: 100px;
+    font-family: 微软雅黑;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 25px;
+    right: 25px;
+}
+
+.reconfirm_btn{
+    width: 350px;
+    height: 30px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    position: absolute;
+    background-color: #de2c32;
+    text-align: center;
+    color: white;
+    font-family: 微软雅黑;
+    font-size: 18px;
+    border-width: 0px;
+}
+
+.reconfirm_btn:hover{
+    cursor: pointer;
+}
+
+.reconfirm_btn:active{
+    background-color: darkgrey;
 }

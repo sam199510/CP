@@ -33,6 +33,8 @@
     </script>
     <script type="text/javascript">
         $(document).ready(function () {
+            var heightOfScreen = $(document).height();
+
             var o_input_account = $("#input_account");
             var o_input_school = $("#input_school");
             var o_input_password = $("#input_password");
@@ -42,6 +44,13 @@
             var o_check_account = $("#check_acccount");
             var o_check_school = $("#check_school");
             var o_check_password = $("#check_password");
+
+            var o_close_btn = $(".close_btn");
+
+            var o_feedback_class = $(".feedback_class");
+            var o_feedback_info_class = $(".feedback_info_class");
+
+            var o_reconfirm_btn = $(".reconfirm_btn");
 
             var isAccount = false;
             var isSchool = false;
@@ -80,10 +89,30 @@
                 }
 
                 if (isAccount == true && isSchool == true && isPassword == true) {
-                    console.log("登录成功");
+                    if (o_input_account.val() == "111111" && o_input_school.val() == "浙江科技学院" && o_input_password.val() == "123456") {
+                        console.log("登录成功");
+                    } else {
+                        o_feedback_class.animate({height: heightOfScreen}, 300);
+                        o_feedback_info_class.animate({top: 200}, 300);
+                    }
                 } else {
                     console.log("登录失败");
                 }
+            });
+            o_close_btn.mouseover(function () {
+                $(".close_btn img").attr("src","images/loginPage/feedbackInfo/x.png");
+                $(".close_btn").css("cursor","pointer");
+            });
+            o_close_btn.mouseout(function () {
+                $(".close_btn img").attr("src","images/loginPage/feedbackInfo/x-2.png");
+            });
+            o_close_btn.click(function () {
+                o_feedback_class.animate({height: 0*heightOfScreen}, 300);
+                o_feedback_info_class.animate({top: -300}, 300);
+            });
+            o_reconfirm_btn.click(function () {
+                o_feedback_class.animate({height: 0*heightOfScreen}, 300);
+                o_feedback_info_class.animate({top: -300}, 300);
             });
         });
     </script>
@@ -133,6 +162,19 @@
     <div class="bottom_bar_class">
         ©&nbsp;云鸽子软件团队<br>
         版权所有&nbsp;侵权必究
+    </div>
+    <div class="feedback_class"></div>
+    <div class="feedback_info_class">
+        <div class="feedback_title">
+            提示
+        </div>
+        <div class="close_btn">
+            <img src="images/loginPage/feedbackInfo/x-2.png">
+        </div>
+        <div class="feedback_content">
+            您的登录信息不正确
+        </div>
+        <input class="reconfirm_btn" type="button" value="确定">
     </div>
 </body>
 </html>
