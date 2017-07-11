@@ -114,7 +114,7 @@
             });
         });
     </script>
-
+    <!--用户退出登录菜单隐藏方法-->
     <script type="text/javascript">
         $(document).bind('click', function (e) {
             var e = e || window.event;
@@ -126,6 +126,15 @@
                 elem = elem.parentNode;
             }
             $(".user_menu").fadeOut(500);
+        });
+    </script>
+    <!--退出登录按钮方法-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var o_logout_btn = $(".logout_btn");
+            o_logout_btn.click(function () {
+                alert("退出登录");
+            });
         });
     </script>
 </head>
