@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>某某某课程的历史通知</title>
+    <title>通知详情</title>
     <link rel="icon" href="images/icon/pigeons.png">
-    <link type="text/css" rel="stylesheet" href="CSS/historyMessageOfAClass/historyMessageOfAClass.css">
+    <link type="text/css" rel="stylesheet" href="CSS/detailMessage/detailMessage.css">
     <script type="text/javascript" src="JS/jQuery/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="JS/jQuery/jquery-3.2.1.min.js"></script>
     <!--搜索放大镜的鼠标指针方法-->
@@ -145,6 +145,48 @@
             });
         });
     </script>
+
+
+    <script type="text/javascript">
+        $(document).resize(function () {
+            var widthOfScreen = $(window).width();
+            var o_confirm_background = $(".confirm_background");
+            o_confirm_background.css("width",widthOfScreen);
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var o_close_btn = $(".close_btn");
+            var o_delete_btn = $(".delete_btn");
+            var o_confirm_background = $(".confirm_background");
+            var o_cancel_btn = $(".cancel_btn");
+            var o_confirm_class = $(".confirm_class");
+
+            o_close_btn.mouseover(function () {
+                $(".close_btn img").attr("src","images/detailMessage/x.png");
+            });
+            o_close_btn.mouseout(function () {
+                $(".close_btn img").attr("src","images/detailMessage/x-2.png");
+            });
+            o_delete_btn.click(function () {
+                o_confirm_background.animate({height: 1000}, 300);
+                o_confirm_class.animate({top: 250, height: 350}, 300);
+                $(".confirm_content").css("display","block");
+            });
+            o_cancel_btn.click(function () {
+                o_confirm_background.animate({height: 0}, 300);
+                o_confirm_class.animate({top: -50, height: 0}, 300);
+                $(".confirm_content").css("display","none");
+            });
+            o_close_btn.click(function () {
+                o_confirm_background.animate({height: 0}, 300);
+                o_confirm_class.animate({top: -50, height: 0}, 300);
+                $(".confirm_content").css("display","none");
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="top_bar_view">
@@ -173,65 +215,40 @@
     </div>
     <div class="nav_bar_view">
         <div class="logo_class">
-            <img src="images/historyMessageOfAClass/history.png">
+            <img src="images/detailMessage/message.png">
         </div>
         <div class="about_a_class">
             <div class="course_title">
-                某某某课程的历史通知
+                某某某课程的通知详情
             </div>
             <a class="back_btn" href="javascript:;">返回</a>
         </div>
     </div>
     <div class="search_bar_view">
         <div class="list_title">
-            以下是某某某课程的历史通知
+            以下是某某某课程的通知详情
         </div>
-        <form class="search_form">
-            <input name="search_content" class="search_content" type="text">
-            <div class="search_btn">
-                <img src="images/classList/search.png">
-            </div>
-        </form>
     </div>
-    <div class="message_list">
-        <ul>
-            <li>
-                <div class="message_summary">
-                    <div class="message_course">
-                        毛泽东思想和中国特色社会主义理论体系概论
-                    </div>
-                    <div class="message_content">
-                        各位同学，今天因如何如何，如何如何
-                    </div>
-                    <div class="message_time">
-                        2017/6/5
-                    </div>
-                </div>
-                <div class="message_operation">
-                    <form>
-                        <input class="operation_btn" type="button" value="通知详情">
-                    </form>
-                </div>
-            </li>
-            <li>
-                <div class="message_summary">
-                    <div class="message_course">
-                        毛泽东思想和中国特色社会主义理论体系概论
-                    </div>
-                    <div class="message_content">
-                        各位同学，今天因如何如何，如何如何
-                    </div>
-                    <div class="message_time">
-                        2017/6/5
-                    </div>
-                </div>
-                <div class="message_operation">
-                    <form>
-                        <input class="operation_btn" type="button" value="通知详情">
-                    </form>
-                </div>
-            </li>
-        </ul>
+
+    <div class="message_class">
+        <div class="message_title">
+            通知
+        </div>
+        <div class="message_content">
+            &nbsp;&nbsp;&nbsp;&nbsp;今天因***************，***********************
+        </div>
+        <div class="message_teacher">
+            通知人：某某某老师
+        </div>
+        <div class="message_time">
+            2017/6/5
+        </div>
+    </div>
+    <div class="delete_class">
+        <div class="delete_image">
+            <img src="images/detailMessage/delete-2.png">
+        </div>
+        <input class="delete_btn" type="button" value="通知发错了？点击删除">
     </div>
     <div class="copyright_view">
         ©&nbsp;云鸽子软件团队<br>
@@ -239,6 +256,24 @@
     </div>
     <div class="back_to_top_div">
         <img src="images/classList/up.png">
+    </div>
+    <div class="confirm_background">
+
+    </div>
+    <div class="confirm_class">
+        <div class="confirm_title">
+            提示
+        </div>
+        <div class="close_btn">
+            <img src="images/detailMessage/x-2.png">
+        </div>
+        <div class="confirm_content">
+            确定要删除这条通知吗？
+        </div>
+        <input class="cancel_btn" type="button" value="取消">
+        <form>
+            <input class="confirm_btn" type="button" value="确定">
+        </form>
     </div>
 </body>
 </html>
