@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>授课列表</title>
+    <title>某某某课程的历史通知</title>
     <link rel="icon" href="images/icon/pigeons.png">
-    <link type="text/css" rel="stylesheet" href="CSS/classList/classList.css">
+    <link type="text/css" rel="stylesheet" href="CSS/historyMessageOfAClass/historyMessageOfAClass.css">
     <script type="text/javascript" src="JS/jQuery/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="JS/jQuery/jquery-3.2.1.min.js"></script>
     <!--搜索放大镜的鼠标指针方法-->
@@ -83,7 +83,7 @@
             o_search_btn.mouseover(function () {
                 clearTimeout(timer);
                 o_search_content.animate({width: 190}, 200);
-                o_search_content.attr("placeholder", "输入授课以搜索");
+                o_search_content.attr("placeholder", "输入通知以搜索");
                 o_search_content.focus();
             });
             o_search_btn.mouseout(function () {
@@ -137,6 +137,14 @@
             });
         });
     </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var o_back_btn = $(".back_btn");
+            o_back_btn.click(function () {
+//                alert("返回");
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="top_bar_view">
@@ -167,15 +175,16 @@
         <div class="logo_class">
             <img src="images/classList/pigeons.png">
         </div>
-        <ul>
-            <li>授课列表</li>
-            <li>历史通知</li>
-            <li>课程表</li>
-        </ul>
+        <div class="about_a_class">
+            <div class="course_title">
+                某某某课程的历史通知
+            </div>
+            <a class="back_btn" href="javascript:;">返回</a>
+        </div>
     </div>
     <div class="search_bar_view">
         <div class="list_title">
-            以下是您的授课列表
+            以下是某某某课程的历史通知
         </div>
         <form class="search_form">
             <input name="search_content" class="search_content" type="text">
@@ -184,40 +193,42 @@
             </div>
         </form>
     </div>
-    <div class="class_list_view">
+    <div class="message_list">
         <ul>
             <li>
-                <div class="course_class">
-                    <div class="course_title">
+                <div class="message_summary">
+                    <div class="message_course">
                         毛泽东思想和中国特色社会主义理论体系概论
                     </div>
-                    <div class="course_time">
-                        周一第6,7节{第1-16周}
+                    <div class="message_content">
+                        各位同学，今天因如何如何，如何如何
                     </div>
-                    <div class="course_position">
-                        *A2-218
+                    <div class="message_time">
+                        2017/6/5
                     </div>
                 </div>
-                <div class="operation">
-                    <input class="operation_btn" type="button" value="查看历史通知">
-                    <input class="operation_btn" type="button" value="发布通知">
+                <div class="message_operation">
+                    <form>
+                        <input class="operation_btn" type="button" value="通知详情">
+                    </form>
                 </div>
             </li>
             <li>
-                <div class="course_class">
-                    <div class="course_title">
+                <div class="message_summary">
+                    <div class="message_course">
                         毛泽东思想和中国特色社会主义理论体系概论
                     </div>
-                    <div class="course_time">
-                        周一第6,7节{第1-16周}
+                    <div class="message_content">
+                        各位同学，今天因如何如何，如何如何
                     </div>
-                    <div class="course_position">
-                        *A2-218
+                    <div class="message_time">
+                        2017/6/5
                     </div>
                 </div>
-                <div class="operation">
-                    <input class="operation_btn" type="button" value="查看历史通知">
-                    <input class="operation_btn" type="button" value="发布通知">
+                <div class="message_operation">
+                    <form>
+                        <input class="operation_btn" type="button" value="通知详情">
+                    </form>
                 </div>
             </li>
         </ul>

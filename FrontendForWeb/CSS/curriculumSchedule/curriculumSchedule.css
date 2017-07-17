@@ -1,0 +1,369 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 1000px;
+}
+
+.top_bar_view{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(40,40,40,1);
+    position: absolute;
+    z-index: 100;
+}
+
+.system_title {
+    width: 120px;
+    height: 44px;
+    padding-left: 35px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 44px;
+    font-family: 微软雅黑;
+    font-size: 20px;
+    color: white;
+}
+
+.top_bar_view ul{
+    margin: 0px;
+    width: 210px;
+    height: 44px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: absolute;
+    top: 0px;
+    right: 35px;
+    line-height: 44px;
+    color: white;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    list-style: none;
+}
+
+.top_bar_view ul li{
+    width: 100px;
+    margin-left: 5px;
+    float: left;
+}
+
+.top_bar_view ul li:nth-child(2){
+    cursor: pointer;
+}
+
+.top_bar_view_two{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(40,40,40,1);
+    position: fixed;
+    z-index: 200;
+    display: none;
+}
+
+.top_bar_view_two ul{
+    margin: 0px;
+    width: 210px;
+    height: 44px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: absolute;
+    top: 0px;
+    right: 35px;
+    line-height: 44px;
+    color: white;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    list-style: none;
+}
+
+.top_bar_view_two ul li{
+    width: 100px;
+    margin-left: 5px;
+    float: left;
+}
+
+.top_bar_view_two ul li:nth-child(2){
+    cursor: pointer;
+}
+
+.nav_bar_view{
+    width: 100%;
+    height: 110px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 60px;
+}
+
+.logo_class{
+    width: 70px;
+    height: 70px;
+    padding-top: 20px;
+    padding-left: 35px;
+    border-radius: 35px;
+}
+
+.logo_class img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav_bar_view ul{
+    margin: 0px;
+    width: 450px;
+    height: 70px;
+    line-height: 70px;
+    font-family: 微软雅黑;
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    list-style: none;
+}
+
+.nav_bar_view ul li{
+    width: 90px;
+    margin-left: 30px;
+    margin-right: 30px;
+    float: left;
+    text-align: center;
+}
+
+.nav_bar_view ul li:hover{
+    cursor: pointer;
+}
+
+.nav_bar_view ul li:active{
+    color: darkgrey;
+}
+
+.nav_bar_view ul li:nth-child(3){
+    color: #1EA114;
+    border-bottom: 3px solid #1EA114;
+}
+
+.search_bar_view{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(40,40,40,1);
+    position: relative;
+    top: 55px;
+}
+
+.list_title{
+    margin-left: 100px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-family: 微软雅黑;
+    font-size: 20px;
+    color: white;
+}
+
+.search_form{
+    width: 210px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 100px;
+}
+
+.search_content{
+    position: absolute;
+    right: 0px;
+    padding-left: 10px;
+    width: 25px;
+    height: 25px;
+    padding-top: auto;
+    padding-bottom: auto;
+    border: 1px solid darkgrey;
+    border-radius: 15px;
+    font-family: 微软雅黑;
+}
+
+.search_btn{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+}
+
+.search_btn img{
+    width: 100%;
+    height: 100%;
+}
+
+.copyright_view{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    width: 100%;
+    height: 60px;
+    font-family: 微软雅黑;
+    text-align: center;
+    border-top: 1px solid rgba(40,40,40,1);
+    background-color: rgba(255,255,255,1);
+}
+
+.back_to_top_div{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    text-align: center;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    right: 0px;
+    bottom: 100px;
+    display: none;
+    background-color: rgba(40,40,40,1);
+    color: #ffffff;
+}
+
+.back_to_top_div:hover{
+    cursor: pointer;
+}
+
+.back_to_top_div img{
+    width: 100%;
+    height: 100%;
+}
+
+.user_menu{
+    z-index: 250;
+    position: fixed;
+    top: 35px;
+    right: 35px;
+    width: 100px;
+    height: 50px;
+    display: none;
+}
+
+.handle_user_menu {
+    z-index: 300;
+    position: fixed;
+    top: 35px;
+    right: 35px;
+    background-color: white;
+    margin: 20px auto;
+    width: 100px;
+    height: 40px;
+    color: rgba(40,40,40,0);
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+    line-height: 40px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+}
+
+.handle_user_menu:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    /*border: 8px solid;*/
+    /*border-bottom-color: white;*/
+    border-bottom: 8px solid #ffffff;
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    left: 50%;
+    bottom: 100%;
+    margin-left: -10px;
+    z-index: 302;
+}
+
+.handle_user_menu:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    /*border: 8px solid;*/
+    /*border-bottom-color: white;*/
+    border-bottom:9px solid #cccccc;
+    border-top:9px solid transparent;
+    border-left:9px solid transparent;
+    border-right:9px solid transparent;
+    left: 50%;
+    bottom: 100%;
+    margin-left: -10px;
+    z-index: 301;
+}
+
+.logout_btn{
+    z-index: 400;
+    width: 102px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    color: black;
+    right: 0px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+}
+
+.logout_btn:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+.course_schedule{
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 1400px;
+    margin-bottom: 30px;
+}
+
+.course_schedule table{
+    width: 1000px;
+    height: 1300px;
+    border-collapse: collapse;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    text-align: center;
+}
+
+.course_schedule table tr{
+    height: 100px;
+}
+
+.course_schedule table tr:nth-child(1){
+    height: 50px;
+}
+
+.course_schedule table tr:nth-child(2){
+    height: 050px;
+}
+
+.course_schedule table tr th{
+    width: 123px;
+    border: 1px solid black;
+    height: 50px;
+}
+
+/*.course_schedule table tr th:nth-child(1){*/
+
+    /**/
+/*}*/
+
+.course_schedule table tr td{
+    border: 1px solid black;
+}

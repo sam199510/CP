@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程表</title>
+    <link rel="icon" href="images/icon/pigeons.png">
+    <link type="text/css" rel="stylesheet" href="CSS/curriculumSchedule/curriculumSchedule.css">
+    <script type="text/javascript" src="JS/jQuery/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="JS/jQuery/jquery-3.2.1.min.js"></script>
+    <!--搜索放大镜的鼠标指针方法-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var o_search_btn = $(".search_btn");
+            o_search_btn.mouseover(function () {
+                o_search_btn.css("cursor","pointer");
+            });
+            o_search_btn.click(function () {
+                //此处写搜索方法的内容
+
+
+            });
+        });
+    </script>
+    <!--点击用户退出登录方法-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var o_handle_user = $(".handle_user");
+            var o_user_menu = $(".user_menu");
+            o_handle_user.click(function () {
+                //此处写处理登录用户的方法
+                o_user_menu.fadeIn(500);
+            });
+        });
+    </script>
+    <!--顶部栏淡入淡出方法-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 0) {
+                        $(".top_bar_view_two").fadeIn(500);
+                    } else {
+                        $(".top_bar_view_two").fadeOut(500);
+                    }
+                });
+            });
+        });
+    </script>
+    <!--回到顶部按钮方法-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 0) {
+                        $(".back_to_top_div").fadeIn(500);
+                    } else {
+                        $(".back_to_top_div").fadeOut(500);
+                    }
+                });
+            });
+            $(".back_to_top_div").mouseover(function () {
+                $(".back_to_top_div").empty();
+                var content = "回到顶部";
+                $(".back_to_top_div").text(content);
+
+            });
+            $(".back_to_top_div").mouseout(function () {
+                $(".back_to_top_div").empty();
+                var content = $("<img>").attr("src", "images/classList/up.png");
+                $(".back_to_top_div").append(content);
+            });
+            $(".back_to_top_div").click(function () {
+                $("body,html").animate({scrollTop: 0}, 500);
+            });
+        });
+    </script>
+    <!--用户退出登录菜单隐藏方法-->
+    <script type="text/javascript">
+        $(document).bind('click', function (e) {
+            var e = e || window.event;
+            var elem = e.target || e.srcElement;
+            while (elem) {
+                if (elem.className && elem.className == "handle_user" || elem.className && elem.className == "user_menu") {
+                    return;
+                }
+                elem = elem.parentNode;
+            }
+            $(".user_menu").fadeOut(500);
+        });
+    </script>
+    <!--退出登录按钮方法-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var o_logout_btn = $(".logout_btn");
+            o_logout_btn.click(function () {
+                alert("退出登录");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="top_bar_view">
+        <div class="system_title">
+            云鸽子
+        </div>
+        <ul>
+            <li>欢迎您</li>
+            <li class="handle_user">某某某老师</li>
+        </ul>
+    </div>
+    <div class="top_bar_view_two">
+        <div class="system_title">
+            云鸽子
+        </div>
+        <ul>
+            <li>欢迎您</li>
+            <li class="handle_user">某某某老师</li>
+        </ul>
+    </div>
+    <div class="user_menu">
+        <div class="handle_user_menu"></div>
+        <div class="logout_btn">
+            退出登录
+        </div>
+    </div>
+    <div class="nav_bar_view">
+        <div class="logo_class">
+            <img src="images/classList/pigeons.png">
+        </div>
+        <ul>
+            <li>授课列表</li>
+            <li>历史通知</li>
+            <li>课程表</li>
+        </ul>
+    </div>
+    <div class="search_bar_view">
+        <div class="list_title">
+            以下是您的课程表
+        </div>
+    </div>
+    <div class="course_schedule">
+        <table>
+            <tr>
+                <th colspan="2">时间</th>
+                <th>周一</th>
+                <th>周二</th>
+                <th>周三</th>
+                <th>周四</th>
+                <th>周五</th>
+                <th>周六</th>
+                <th>周日</th>
+            </tr>
+            <tr>
+                <td colspan="2">晨间</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="5">上午</td>
+                <td>
+                    1
+                    <br><br>
+                    8:00
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    2
+                    <br><br>
+                    8:50
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    3
+                    <br><br>
+                    9:50
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    4
+                    <br><br>
+                    10:40
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    5
+                    <br><br>
+                    11:30
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="4">
+                    下午
+                </td>
+                <td>
+                    6
+                    <br>
+                    <br>
+                    13:30
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    7
+                    <br>
+                    <br>
+                    14:20
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    8
+                    <br>
+                    <br>
+                    15:20
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    9
+                    <br>
+                    <br>
+                    16:10
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="3">
+                    晚间
+                </td>
+                <td>
+                    10
+                    <br>
+                    <br>
+                    18:30
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    11
+                    <br>
+                    <br>
+                    19:20
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    12
+                    <br>
+                    <br>
+                    20:10
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="copyright_view">
+        ©&nbsp;云鸽子软件团队<br>
+        版权所有&nbsp;侵权必究
+    </div>
+    <div class="back_to_top_div">
+        <img src="images/classList/up.png">
+    </div>
+</body>
+</html>
