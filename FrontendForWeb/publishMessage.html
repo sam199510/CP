@@ -3,8 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <title>发布通知</title>
+    <link rel="icon" href="images/icon/pigeons.png">
+    <link type="text/css" rel="stylesheet" href="CSS/publishMessage/publishMessage.css">
+    <script type="text/javascript" src="JS/jQuery/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="JS/jQuery/jquery-3.2.1.min.js"></script>
+    <!--搜索放大镜的鼠标指针方法-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var o_search_btn = $(".search_btn");
+            o_search_btn.mouseover(function () {
+                o_search_btn.css("cursor","pointer");
+            });
+            o_search_btn.click(function () {
+                //此处写搜索方法的内容
+
+
+            });
+        });
+    </script>
+    <!--点击用户退出登录方法-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var o_handle_user = $(".handle_user");
+            var o_user_menu = $(".user_menu");
+            o_handle_user.click(function () {
+                //此处写处理登录用户的方法
+                o_user_menu.fadeIn(500);
+            });
+        });
+    </script>
+    <!--顶部栏淡入淡出方法-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 0) {
+                        $(".top_bar_view_two").fadeIn(500);
+                    } else {
+                        $(".top_bar_view_two").fadeOut(500);
+                    }
+                });
+            });
+        });
+    </script>
+    <!--回到顶部按钮方法-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 0) {
+                        $(".back_to_top_div").fadeIn(500);
+                    } else {
+                        $(".back_to_top_div").fadeOut(500);
+                    }
+                });
+            });
+            $(".back_to_top_div").mouseover(function () {
+                $(".back_to_top_div").empty();
+                var content = "回到顶部";
+                $(".back_to_top_div").text(content);
+
+            });
+            $(".back_to_top_div").mouseout(function () {
+                $(".back_to_top_div").empty();
+                var content = $("<img>").attr("src", "images/classList/up.png");
+                $(".back_to_top_div").append(content);
+            });
+            $(".back_to_top_div").click(function () {
+                $("body,html").animate({scrollTop: 0}, 500);
+            });
+        });
+    </script>
+    <!--搜索框方法-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var o_search_content = $(".search_content");
+            var o_search_btn = $(".search_btn");
+            var timer = null;
+            o_search_btn.mouseover(function () {
+                clearTimeout(timer);
+                o_search_content.animate({width: 190}, 200);
+                o_search_content.attr("placeholder", "输入通知以搜索");
+                o_search_content.focus();
+            });
+            o_search_btn.mouseout(function () {
+                if (o_search_content.val() != "") {
+                    clearTimeout(timer);
+                } else {
+                    timer = setTimeout(function () {
+                        o_search_content.animate({width: 25}, 200);
+                        o_search_content.attr("placeholder", "");
+                    }, 0);
+                }
+                o_search_content.blur();
+            });
+            o_search_content.mouseover(function () {
+                clearTimeout(timer);
+                o_search_content.focus();
+            });
+            o_search_content.mouseout(function () {
+                if (o_search_content.val() != "") {
+                    clearTimeout(timer);
+                } else {
+                    timer = setTimeout(function () {
+                        o_search_content.animate({width: 25}, 200);
+                        o_search_content.attr("placeholder", "");
+                    }, 0);
+                }
+                o_search_content.blur();
+            });
+        });
+    </script>
+    <!--用户退出登录菜单隐藏方法-->
+    <script type="text/javascript">
+        $(document).bind('click', function (e) {
+            var e = e || window.event;
+            var elem = e.target || e.srcElement;
+            while (elem) {
+                if (elem.className && elem.className == "handle_user" || elem.className && elem.className == "user_menu") {
+                    return;
+                }
+                elem = elem.parentNode;
+            }
+            $(".user_menu").fadeOut(500);
+        });
+    </script>
+    <!--退出登录按钮方法-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var o_logout_btn = $(".logout_btn");
+            o_logout_btn.click(function () {
+                alert("退出登录");
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var o_back_btn = $(".back_btn");
+            o_back_btn.click(function () {
+//                alert("返回");
+            });
+        });
+    </script>
+
 </head>
 <body>
+    <div class="top_bar_view">
+        <div class="system_title">
+            云鸽子
+        </div>
+        <ul>
+            <li>欢迎您</li>
+            <li class="handle_user">某某某老师</li>
+        </ul>
+    </div>
+    <div class="top_bar_view_two">
+        <div class="system_title">
+            云鸽子
+        </div>
+        <ul>
+            <li>欢迎您</li>
+            <li class="handle_user">某某某老师</li>
+        </ul>
+    </div>
+    <div class="user_menu">
+        <div class="handle_user_menu"></div>
+        <div class="logout_btn">
+            退出登录
+        </div>
+    </div>
+    <div class="nav_bar_view">
+        <div class="logo_class">
+            <img src="images/detailMessage/message.png">
+        </div>
+        <div class="about_a_class">
+            <div class="course_title">
+                某某某课程的通知发布
+            </div>
+            <a class="back_btn" href="javascript:;">返回</a>
+        </div>
+    </div>
+    <div class="search_bar_view">
+        <div class="list_title">
+            以下是某某某课程的通知发布
+        </div>
+    </div>
 
+    <div class="publish_message_class">
+        <div class="publish_message_title">
+            通知发布
+        </div>
+        <textarea class="publish_message_content" placeholder="请输入需要发布的通知"></textarea>
+        <div class="publish_class">
+            <div class="publish_class_image">
+                <img src="images/publishMessage/plane.png">
+            </div>
+            <form>
+                <input class="publish_btn" type="button" value="确认无误，发送通知">
+            </form>
+        </div>
+    </div>
+
+    <div class="copyright_view">
+        ©&nbsp;云鸽子软件团队<br>
+        版权所有&nbsp;侵权必究
+    </div>
+    <div class="back_to_top_div">
+        <img src="images/classList/up.png">
+    </div>
 </body>
 </html>
